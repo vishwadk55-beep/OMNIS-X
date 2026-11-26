@@ -1,0 +1,7 @@
+[tool.ruff]
+line-length = 120
+target-version = "py313"
+
+[tool.pyright]
+pythonVersion = "3.13"
+typeCheckingMode = "standard"

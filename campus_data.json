@@ -1,0 +1,468 @@
+{
+  "power_zones": [
+    {
+      "id": "POWER_A",
+      "name": "Power Zone A (Academic North)",
+      "capacity_kw": 450,
+      "status": "operational",
+      "backup_generator": true
+    },
+    {
+      "id": "POWER_B",
+      "name": "Power Zone B (Block B & Labs)",
+      "capacity_kw": 420,
+      "status": "operational",
+      "backup_generator": false
+    },
+    {
+      "id": "POWER_C",
+      "name": "Power Zone C (South Wing & Placement)",
+      "capacity_kw": 380,
+      "status": "operational",
+      "backup_generator": true
+    },
+    {
+      "id": "POWER_S",
+      "name": "Power Zone S (Hostel & Services)",
+      "capacity_kw": 300,
+      "status": "operational",
+      "backup_generator": true
+    }
+  ],
+  "buildings": [
+    {
+      "id": "BLOCK_A",
+      "name": "Academic Block A",
+      "power_zone_id": "POWER_A",
+      "distance_group": 1,
+      "status": "operational"
+    },
+    {
+      "id": "BLOCK_B",
+      "name": "Engineering Block B",
+      "power_zone_id": "POWER_B",
+      "distance_group": 2,
+      "status": "operational"
+    },
+    {
+      "id": "BLOCK_C",
+      "name": "Innovation Block C",
+      "power_zone_id": "POWER_C",
+      "distance_group": 3,
+      "status": "operational"
+    },
+    {
+      "id": "HOSTEL_H1",
+      "name": "Hostel Block H1",
+      "power_zone_id": "POWER_S",
+      "distance_group": 4,
+      "status": "operational"
+    },
+    {
+      "id": "ADMIN_BLDG",
+      "name": "Administrative Block",
+      "power_zone_id": "POWER_A",
+      "distance_group": 1,
+      "status": "operational"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "B101",
+      "name": "Room B101",
+      "building_id": "BLOCK_B",
+      "room_type": "classroom",
+      "capacity": 40,
+      "equipment": ["projector", "whiteboard"],
+      "status": "operational"
+    },
+    {
+      "id": "B102",
+      "name": "Room B102",
+      "building_id": "BLOCK_B",
+      "room_type": "classroom",
+      "capacity": 40,
+      "equipment": ["projector", "whiteboard"],
+      "status": "operational"
+    },
+    {
+      "id": "B201",
+      "name": "Room B201",
+      "building_id": "BLOCK_B",
+      "room_type": "classroom",
+      "capacity": 40,
+      "equipment": ["projector", "smartboard"],
+      "status": "operational"
+    },
+    {
+      "id": "B202",
+      "name": "Room B202",
+      "building_id": "BLOCK_B",
+      "room_type": "classroom",
+      "capacity": 40,
+      "equipment": ["projector"],
+      "status": "operational"
+    },
+    {
+      "id": "B203",
+      "name": "Room B203",
+      "building_id": "BLOCK_B",
+      "room_type": "classroom",
+      "capacity": 40,
+      "equipment": ["projector"],
+      "status": "operational"
+    },
+    {
+      "id": "LAB001",
+      "name": "AI & Computing Lab (LAB001)",
+      "building_id": "BLOCK_B",
+      "room_type": "lab",
+      "capacity": 35,
+      "equipment": ["computers", "gpu_cluster", "projector"],
+      "status": "operational"
+    },
+    {
+      "id": "LAB002",
+      "name": "IoT & Embedded Lab (LAB002)",
+      "building_id": "BLOCK_B",
+      "room_type": "lab",
+      "capacity": 35,
+      "equipment": ["embedded_kits", "oscilloscope"],
+      "status": "operational"
+    },
+    {
+      "id": "B301",
+      "name": "Block B Exam Hall (B301)",
+      "building_id": "BLOCK_B",
+      "room_type": "exam_hall",
+      "capacity": 60,
+      "equipment": ["exam_seating", "cctv"],
+      "status": "operational"
+    },
+    {
+      "id": "A101",
+      "name": "Room A101",
+      "building_id": "BLOCK_A",
+      "room_type": "classroom",
+      "capacity": 45,
+      "equipment": ["projector", "smartboard"],
+      "status": "operational"
+    },
+    {
+      "id": "A102",
+      "name": "Room A102",
+      "building_id": "BLOCK_A",
+      "room_type": "classroom",
+      "capacity": 45,
+      "equipment": ["projector", "whiteboard"],
+      "status": "operational"
+    },
+    {
+      "id": "A103",
+      "name": "Room A103",
+      "building_id": "BLOCK_A",
+      "room_type": "classroom",
+      "capacity": 45,
+      "equipment": ["projector", "smartboard"],
+      "status": "operational"
+    },
+    {
+      "id": "A104",
+      "name": "Room A104",
+      "building_id": "BLOCK_A",
+      "room_type": "classroom",
+      "capacity": 45,
+      "equipment": ["projector"],
+      "status": "operational"
+    },
+    {
+      "id": "A105",
+      "name": "Room A105",
+      "building_id": "BLOCK_A",
+      "room_type": "classroom",
+      "capacity": 45,
+      "equipment": ["projector"],
+      "status": "operational"
+    },
+    {
+      "id": "A201",
+      "name": "Small Seminar Room A201",
+      "building_id": "BLOCK_A",
+      "room_type": "classroom",
+      "capacity": 20,
+      "equipment": ["projector"],
+      "status": "operational"
+    },
+    {
+      "id": "LAB_A1",
+      "name": "Backup AI Lab (LAB_A1)",
+      "building_id": "BLOCK_A",
+      "room_type": "lab",
+      "capacity": 40,
+      "equipment": ["computers", "gpu_cluster", "projector"],
+      "status": "operational"
+    },
+    {
+      "id": "A301",
+      "name": "Block A Exam Hall (A301)",
+      "building_id": "BLOCK_A",
+      "room_type": "exam_hall",
+      "capacity": 80,
+      "equipment": ["exam_seating", "cctv", "projector"],
+      "status": "operational"
+    },
+    {
+      "id": "C101",
+      "name": "Room C101",
+      "building_id": "BLOCK_C",
+      "room_type": "classroom",
+      "capacity": 50,
+      "equipment": ["projector", "whiteboard"],
+      "status": "operational"
+    },
+    {
+      "id": "C102",
+      "name": "Placement & Seminar Hall (C102)",
+      "building_id": "BLOCK_C",
+      "room_type": "classroom",
+      "capacity": 50,
+      "equipment": ["projector", "smartboard"],
+      "status": "operational"
+    },
+    {
+      "id": "C103",
+      "name": "Room C103",
+      "building_id": "BLOCK_C",
+      "room_type": "classroom",
+      "capacity": 50,
+      "equipment": ["projector"],
+      "status": "operational"
+    },
+    {
+      "id": "LAB_C1",
+      "name": "Backup IoT Lab (LAB_C1)",
+      "building_id": "BLOCK_C",
+      "room_type": "lab",
+      "capacity": 40,
+      "equipment": ["embedded_kits", "oscilloscope"],
+      "status": "operational"
+    },
+    {
+      "id": "LAB_C2",
+      "name": "Cryogenic Materials Lab (LAB_C2)",
+      "building_id": "BLOCK_C",
+      "room_type": "lab",
+      "capacity": 35,
+      "equipment": ["cryo_chamber"],
+      "status": "operational"
+    }
+  ],
+  "faculty": [
+    {"id": "F001", "name": "Dr. A. Kavitha", "department": "CSE", "max_hours": 18, "status": "available"},
+    {"id": "F002", "name": "Prof. R. Subramanian", "department": "ECE", "max_hours": 18, "status": "available"},
+    {"id": "F003", "name": "Dr. M. Praveen", "department": "CSE", "max_hours": 18, "status": "available"},
+    {"id": "F004", "name": "Prof. S. Lakshmi", "department": "ECE", "max_hours": 18, "status": "available"},
+    {"id": "F005", "name": "Dr. V. Karthik", "department": "MECH", "max_hours": 18, "status": "available"},
+    {"id": "F006", "name": "Prof. N. Divya", "department": "IT", "max_hours": 18, "status": "available"},
+    {"id": "F007", "name": "Dr. P. Aravind", "department": "CSE", "max_hours": 18, "status": "available"},
+    {"id": "F008", "name": "Prof. K. Meenakshi", "department": "CSE", "max_hours": 18, "status": "available"},
+    {"id": "F009", "name": "Dr. S. Venkatesh", "department": "AI", "max_hours": 18, "status": "available"},
+    {"id": "F010", "name": "Prof. T. Ananya", "department": "CSE", "max_hours": 18, "status": "available"},
+    {"id": "F011", "name": "Dr. G. Harish", "department": "ECE", "max_hours": 18, "status": "available"},
+    {"id": "F012", "name": "Prof. D. Rajesh", "department": "MECH", "max_hours": 18, "status": "available"}
+  ],
+  "batches": [
+    {"id": "CSE_A", "name": "CSE Section A", "department": "CSE", "student_count": 30, "student_set": "STU_001-030"},
+    {"id": "CSE_B", "name": "CSE Section B", "department": "CSE", "student_count": 30, "student_set": "STU_031-060"},
+    {"id": "ECE_A", "name": "ECE Section A", "department": "ECE", "student_count": 30, "student_set": "STU_061-090"},
+    {"id": "ECE_B", "name": "ECE Section B", "department": "ECE", "student_count": 30, "student_set": "STU_091-120"},
+    {"id": "MECH_A", "name": "MECH Section A", "department": "MECH", "student_count": 30, "student_set": "STU_121-150"},
+    {"id": "IT_A", "name": "IT Section A", "department": "IT", "student_count": 30, "student_set": "STU_151-180"},
+    {"id": "AI_A", "name": "AI & DS Section A", "department": "AI", "student_count": 30, "student_set": "STU_181-210"},
+    {"id": "CIVIL_A", "name": "Civil Section A", "department": "CIVIL", "student_count": 30, "student_set": "STU_211-240"}
+  ],
+  "activities": [
+    {
+      "id": "ACT001",
+      "title": "AI Lab",
+      "activity_type": "lab",
+      "domain": "laboratory",
+      "faculty_id": "F001",
+      "batch_id": "CSE_A",
+      "room_id": "LAB001",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "required_equipment": ["computers", "gpu_cluster"],
+      "priority": 1
+    },
+    {
+      "id": "ACT002",
+      "title": "IoT & Embedded Systems Lab",
+      "activity_type": "lab",
+      "domain": "laboratory",
+      "faculty_id": "F002",
+      "batch_id": "ECE_A",
+      "room_id": "LAB002",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "required_equipment": ["embedded_kits", "oscilloscope"],
+      "priority": 1
+    },
+    {
+      "id": "ACT003",
+      "title": "Data Structures & Algorithms",
+      "activity_type": "class",
+      "domain": "academic",
+      "faculty_id": "F003",
+      "batch_id": "CSE_B",
+      "room_id": "B201",
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "required_equipment": ["projector"],
+      "priority": 2
+    },
+    {
+      "id": "ACT004",
+      "title": "Operating Systems",
+      "activity_type": "class",
+      "domain": "academic",
+      "faculty_id": "F003",
+      "batch_id": "CSE_B",
+      "room_id": "B201",
+      "start_time": "10:00",
+      "end_time": "11:00",
+      "required_equipment": ["projector"],
+      "priority": 2
+    },
+    {
+      "id": "ACT005",
+      "title": "Digital Signal Processing",
+      "activity_type": "class",
+      "domain": "academic",
+      "faculty_id": "F004",
+      "batch_id": "ECE_B",
+      "room_id": "B202",
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "required_equipment": ["projector"],
+      "priority": 2
+    },
+    {
+      "id": "ACT006",
+      "title": "Engineering Thermodynamics",
+      "activity_type": "class",
+      "domain": "academic",
+      "faculty_id": "F005",
+      "batch_id": "MECH_A",
+      "room_id": "B203",
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "required_equipment": ["projector"],
+      "priority": 2
+    },
+    {
+      "id": "ACT007",
+      "title": "Computer Networks",
+      "activity_type": "class",
+      "domain": "academic",
+      "faculty_id": "F006",
+      "batch_id": "IT_A",
+      "room_id": "B101",
+      "start_time": "10:00",
+      "end_time": "11:00",
+      "required_equipment": ["projector"],
+      "priority": 2
+    },
+    {
+      "id": "ACT008",
+      "title": "Machine Learning Foundations",
+      "activity_type": "class",
+      "domain": "academic",
+      "faculty_id": "F007",
+      "batch_id": "CSE_A",
+      "room_id": "B102",
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "required_equipment": ["projector"],
+      "priority": 2
+    },
+    {
+      "id": "EXAM01",
+      "title": "Mid-Sem Algorithms Exam",
+      "activity_type": "exam",
+      "domain": "examination",
+      "faculty_id": "F008",
+      "batch_id": "MECH_A",
+      "room_id": "B301",
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "required_equipment": ["exam_seating", "cctv"],
+      "priority": 1
+    },
+    {
+      "id": "ACT009",
+      "title": "Database Management Systems",
+      "activity_type": "class",
+      "domain": "academic",
+      "faculty_id": "F009",
+      "batch_id": "AI_A",
+      "room_id": "B201",
+      "start_time": "14:00",
+      "end_time": "15:00",
+      "required_equipment": ["projector"],
+      "priority": 2
+    },
+    {
+      "id": "ACT010",
+      "title": "Compiler Design",
+      "activity_type": "class",
+      "domain": "academic",
+      "faculty_id": "F010",
+      "batch_id": "AI_A",
+      "room_id": "A101",
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "required_equipment": ["projector"],
+      "priority": 2
+    },
+    {
+      "id": "ACT011",
+      "title": "Cryogenic Materials Practical",
+      "activity_type": "lab",
+      "domain": "laboratory",
+      "faculty_id": "F012",
+      "batch_id": "CIVIL_A",
+      "room_id": "LAB_C2",
+      "start_time": "09:00",
+      "end_time": "11:00",
+      "required_equipment": ["cryo_chamber"],
+      "priority": 1
+    },
+    {
+      "id": "PLC001",
+      "title": "Day-1 Technical Recruitment Drive",
+      "activity_type": "placement",
+      "domain": "placement",
+      "faculty_id": "F010",
+      "batch_id": "AI_A",
+      "room_id": "C102",
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "required_equipment": ["projector", "smartboard"],
+      "priority": 3
+    },
+    {
+      "id": "EVT001",
+      "title": "Annual Engineering Tech Symposium",
+      "activity_type": "event",
+      "domain": "events",
+      "faculty_id": "F011",
+      "batch_id": "CIVIL_A",
+      "room_id": "A301",
+      "start_time": "14:00",
+      "end_time": "16:00",
+      "required_equipment": ["projector"],
+      "priority": 4
+    }
+  ]
+}
